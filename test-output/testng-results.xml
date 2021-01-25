@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="3" passed="0" failed="3" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2021-01-25T21:24:01 NZDT" name="Default suite" finished-at="2021-01-25T21:24:32 NZDT" duration-ms="30947">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@31e5415e]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2021-01-25T21:24:01 NZDT" name="Default test" finished-at="2021-01-25T21:24:32 NZDT" duration-ms="30947">
+      <class name="runner.TestRunner">
+        <test-method is-config="true" signature="setUpClass()[pri:0, instance:runner.TestRunner@31e5415e]" started-at="2021-01-25T21:24:01 NZDT" name="setUpClass" finished-at="2021-01-25T21:24:02 NZDT" duration-ms="662" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@31e5415e]" started-at="2021-01-25T21:24:02 NZDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-25T21:24:13 NZDT" duration-ms="11332" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User Login on website]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy23.click(Unknown Source)
+at pages.LoginPage.clickSignIn(LoginPage.java:35)
+at stepDefinition.LoginStepDef.i_enter_my_and(LoginStepDef.java:40)
+at ✽.I enter my "shireenkamra@gmail.com" and "Shireen12"(file:///C:/CucumberPageObjectFramework-master/Framework/src/test/resources/features/Login.feature:8)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@31e5415e]" started-at="2021-01-25T21:24:13 NZDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-25T21:24:23 NZDT" duration-ms="9137" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User Login on website]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy23.click(Unknown Source)
+at pages.LoginPage.clickSignIn(LoginPage.java:35)
+at stepDefinition.LoginStepDef.i_enter_my_and(LoginStepDef.java:40)
+at ✽.I enter my "shireenkamra@gmail.com" and "Shireen12"(file:///C:/CucumberPageObjectFramework-master/Framework/src/test/resources/features/Login.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper, io.cucumber.testng.FeatureWrapper)[pri:0, instance:runner.TestRunner@31e5415e]" started-at="2021-01-25T21:24:23 NZDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2021-01-25T21:24:32 NZDT" duration-ms="9468" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Successful Login"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Optional[User Login on website]"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.SearchContext.findElement(org.openqa.selenium.By)" because "this.searchContext" is null
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+at com.sun.proxy.$Proxy23.click(Unknown Source)
+at pages.LoginPage.clickSignIn(LoginPage.java:35)
+at stepDefinition.LoginStepDef.i_enter_my_and(LoginStepDef.java:40)
+at ✽.I enter my "arijitlahiri5@gmail.com" and "Arijit12"(file:///C:/CucumberPageObjectFramework-master/Framework/src/test/resources/features/Login.feature:13)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:runner.TestRunner@31e5415e]" started-at="2021-01-25T21:24:32 NZDT" name="tearDownClass" finished-at="2021-01-25T21:24:32 NZDT" duration-ms="291" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- runner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
