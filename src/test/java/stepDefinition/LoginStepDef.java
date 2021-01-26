@@ -1,7 +1,5 @@
 package stepDefinition;
 
-import org.testng.Assert;
-
 import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.en.Given;
@@ -25,22 +23,21 @@ public class LoginStepDef extends BaseTest {
 	
 	@Given("I am on the Home Page")
 	public void i_am_on_the_home_page() {
-		try {
-			//the below is a testng assertion. To do a contains assertion, use Junit hamcrest
-			Assert.assertEquals("https://www.thewarehouse.co.nz/", driver.getCurrentUrl());
-//			assertThat(driver.getCurrentUrl(), containsString("home"));
-		}catch(Exception e) {
-			e.printStackTrace();
-		}
+		driver.get("https://www.thewarehouse.co.nz/");
+		verifyHomePage();
 	}
 
 	@When("I enter my {string} and {string}")
 	public void i_enter_my_and(String Username, String Password) {
+		try {
 		lp = new LoginPage();
 		lp.clickSignIn();
 		lp.enterUserName(Username);
 		lp.enterPassword(Password);
 		lp.clickLogin();
+	}catch(Exception e) {
+		e.printStackTrace();
+	}
 	}
 
 	@Then("I should see the MyAccount page")
