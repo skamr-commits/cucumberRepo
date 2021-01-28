@@ -16,10 +16,8 @@ public class LoginStepDef extends BaseTest {
 		super();
 	}
 	
-	@Before
-	public void setUp() {
-		initialisationDriver();
-	}
+
+	
 	
 	@Given("I am on the Home Page")
 	public void i_am_on_the_home_page() {
@@ -46,14 +44,8 @@ public class LoginStepDef extends BaseTest {
 		
 	}
 	
-	@After
-	public void tearDown() {
-		try {
-			closeDriver();
-		}catch(Exception e) {
-			e.printStackTrace();	
-		}
-	}
+	
+	
 
 
 }

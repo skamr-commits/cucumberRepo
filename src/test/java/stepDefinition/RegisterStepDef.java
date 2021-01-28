@@ -20,10 +20,7 @@ public class RegisterStepDef extends BaseTest {
 	public RegisterStepDef() {
 		super();
 	}
-	@Before
-	public void setUp() {
-		initialisationDriver();
-	}
+	
 		
 	@And("I click on Register")
 	public void i_click_on_register() {
@@ -56,14 +53,7 @@ public class RegisterStepDef extends BaseTest {
 	    
 	}
 	
-	@After
-	public void tearDown() {
-		try {
-			closeDriver();
-		}catch(Exception e) {
-			e.printStackTrace();	
-		}
-	}
+	
 	
 }
 	

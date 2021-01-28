@@ -12,7 +12,7 @@ public class BaseTest {
 	
 public static WebDriver driver;
 	
-	public void initialisationDriver() {
+	public static void initialisationDriver() {
 		
 		WebDriverManager.chromedriver().setup();
 		driver = new ChromeDriver();
@@ -30,7 +30,7 @@ public static WebDriver driver;
 	}
 	
 	
-	public void closeDriver() {
+	public static void closeDriver() {
 		driver.close();
 		driver.quit();
 	}
